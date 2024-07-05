@@ -699,7 +699,7 @@ async def main(workList, uid, oocr):
             else:
                 print("貌似第一次使用，未找到chrome，正在下载chrome浏览器....")
 
-                chromeurl = "https://mirrors.huaweicloud.com/chromium-browser-snapshots/Win_x64/588429/chrome-win32.zip"
+                chromeurl = "https://playwright.azureedge.net/builds/chromium/1088/chromium-linux-arm64.zip"
                 target_file = "chrome-win.zip"
                 await download_file(chromeurl, target_file)
                 with zipfile.ZipFile(target_file, "r") as zip_ref:
